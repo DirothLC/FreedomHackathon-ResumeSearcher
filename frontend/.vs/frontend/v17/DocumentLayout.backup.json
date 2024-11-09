@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\resumelistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:resumelistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|d:\\githubrepos\\freedomhackathon-resumesearcher\\frontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A559D31A-967D-40A6-9E28-0FB09635F334}|Frontend.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAywC8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:08:10.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:06:38.489Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -66,35 +40,61 @@
               "RelativeDocumentMoniker": "Models\\Resume.cs",
               "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Models\\Resume.cs",
               "RelativeToolTip": "Models\\Resume.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T02:49:43.956Z",
+              "WhenOpened": "2024-11-09T06:24:52.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ResumeListWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\ResumeListWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ResumeListWindow.xaml.cs",
-              "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\ResumeListWindow.xaml.cs",
-              "RelativeToolTip": "ResumeListWindow.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAzwAYAAAASAAAAAAAAAA==",
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:08:22.125Z",
+              "WhenOpened": "2024-11-09T06:16:44.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ResumeService.cs",
               "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Services\\ResumeService.cs",
               "RelativeDocumentMoniker": "Services\\ResumeService.cs",
               "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Services\\ResumeService.cs",
               "RelativeToolTip": "Services\\ResumeService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T03:46:08.519Z",
+              "WhenOpened": "2024-11-09T06:13:31.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResumeListWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\ResumeListWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ResumeListWindow.xaml.cs",
+              "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\ResumeListWindow.xaml.cs",
+              "RelativeToolTip": "ResumeListWindow.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:13:48.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T04:08:10.53Z",
               "EditorCaption": ""
             }
           ]

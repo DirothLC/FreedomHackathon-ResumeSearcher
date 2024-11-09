@@ -13,6 +13,20 @@ namespace Frontend.Services
             _httpClient = new HttpClient { BaseAddress = new Uri("http://localhost:8080") };
         }
 
+        /*        public async Task<List<Resume>> GetResumesAsync()
+                {
+                    HttpResponseMessage response = await _httpClient.GetAsync("/api/resumes");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var json = await response.Content.ReadAsStringAsync();
+                        return JsonSerializer.Deserialize<List<Resume>>(json);
+                    }
+                    else
+                    {
+                        throw new Exception($"Ошибка при получении данных: {response.ReasonPhrase}");
+                    }
+                }*/
         public async Task<List<Resume>> GetResumesAsync()
         {
             HttpResponseMessage response = await _httpClient.GetAsync("/api/resumes");
