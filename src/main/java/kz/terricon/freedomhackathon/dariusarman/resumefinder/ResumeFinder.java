@@ -11,10 +11,20 @@ import java.util.List;
 public class ResumeFinder {
 
     public static void main(String[] args){
-        SpringApplication.run(ResumeFinder.class, args);
-       /* Manager manager=new Manager();
+
+        //SpringApplication.run(ResumeFinder.class, args);
+       Manager manager=new Manager();
         List<Resume> resumes=manager.readFullText("resume");
 
-        Reporter.printResumeFullText(resumes);*/
+        //Reporter.printResumeFullText(resumes);
+        for (Resume resume : resumes) {
+            System.out.println("---- Резюме ----");
+            System.out.println("Полный текст: " + resume.getFullText());
+            System.out.println("Телефон: " + resume.getPhone());
+            System.out.println("E-mail: " + resume.getEMail());
+            System.out.println("Пол: " + resume.getSex());
+            System.out.println("Опыт работы: " + resume.getExperience());
+            System.out.println();
+        }
     }
 }
