@@ -3,13 +3,21 @@ package kz.terricon.freedomhackathon.dariusarman.utils;
 import kz.terricon.freedomhackathon.dariusarman.entities.Resume;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+@RestController
+@CrossOrigin(origins = "http://localhost:8080")
 public class Manager {
-public List<Resume> readFullText(String path){
+    @GetMapping("/api/resumes")
+public List<Resume> readFullText(@RequestParam String path){
+
     List<Resume> resumes=new ArrayList<>();
     File folder=new File(path);
     File[] files = folder.listFiles((dir, name) -> name.endsWith(".pdf"));
