@@ -1,53 +1,42 @@
 ﻿using System;
 using System.Net.Http;
-using System.Text;
-using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Frontend.Models;
+using Frontend.Services;
 
 namespace Frontend
 {
     public partial class MainWindow : Window
     {
-        private readonly HttpClient _httpClient = new HttpClient();
+        private readonly ResumeService _resumeService;
 
         public MainWindow()
         {
             InitializeComponent();
+            _resumeService = new ResumeService(App.HttpClient);
         }
 
         private async void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
-            var resume = new
+            var query = new ResumeQuery
             {
-                fullText = FullTextBox.Text == "Full Text" ? null : FullTextBox.Text,
-                phone = IncludePhoneCheckbox.IsChecked == true && PhoneBox.Text != "Phone" ? PhoneBox.Text : null,
-                email = IncludeEmailCheckbox.IsChecked == true && EmailBox.Text != "Email" ? EmailBox.Text : null,
-                sex = SexBox.Text == "Sex" ? null : SexBox.Text,
-                experience = IncludeExperienceCheckbox.IsChecked == true && ExperienceBox.Text != "Experience" ? ExperienceBox.Text : null
+                Sex = SexBox.Text == "Sex" ? null : SexBox.Text,
+                Experience = ExperienceBox.Text == "Experience" ? null : ExperienceBox.Text,
+                Skills = SkillsBox.Text == "Skills (comma-separated)" ? null : SkillsBox.Text.Split(',').Select(s => s.Trim()).ToList()
             };
-
-            var jsonContent = JsonSerializer.Serialize(resume);
-            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
             try
             {
-                var response = await _httpClient.PostAsync("http://localhost:8080/api/resumes", content);
+                var resumes = await _resumeService.GetResumesAsync(query);
 
-                if (response.IsSuccessStatusCode)
-                {
-                    var resumeListWindow = new ResumeListWindow();
-                    resumeListWindow.Show();
-                }
-                else
-                {
-                    MessageBox.Show($"Error: {response.ReasonPhrase}");
-                }
+                var resumeListWindow = new ResumeListWindow(resumes);
+                resumeListWindow.Show();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Exception: {ex.Message}");
+                MessageBox.Show($"Ошибка при поиске резюме: {ex.Message}");
             }
         }
 
@@ -69,11 +58,9 @@ namespace Frontend
                 textBox.Foreground = Brushes.Gray;
                 textBox.Text = textBox.Name switch
                 {
-                    "FullTextBox" => "Full Text",
-                    "PhoneBox" => "Phone",
-                    "EmailBox" => "Email",
                     "SexBox" => "Sex",
                     "ExperienceBox" => "Experience",
+                    "SkillsBox" => "Skills (comma-separated)",
                     _ => textBox.Text
                 };
             }

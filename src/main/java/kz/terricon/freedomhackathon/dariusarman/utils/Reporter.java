@@ -7,7 +7,7 @@ import java.util.List;
 public class Reporter {
     public static void printResumeFullText(List<Resume>resumes){
         for (Resume resume : resumes) {
-            System.out.println("Резюме: " + resume.getFullText());
+            System.out.println("Резюме: " + resume.getText());
         }
     }
 }

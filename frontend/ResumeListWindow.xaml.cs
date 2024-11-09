@@ -1,36 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows;
 using Frontend.Models;
-using Frontend.Services;
 
 namespace Frontend
 {
     public partial class ResumeListWindow : Window
     {
-        private readonly ResumeService _resumeService;
-
-        public ResumeListWindow()
+        public ResumeListWindow(List<Resume> resumes)
         {
             InitializeComponent();
-            _resumeService = new ResumeService();
-            LoadResumesAsync();
+            LoadResumes(resumes);
         }
 
-        private async void LoadResumesAsync()
+        private void LoadResumes(List<Resume> resumes)
         {
-            try
+            ResumeListBox.Items.Clear();
+            foreach (var resume in resumes)
             {
-                List<Resume> resumes = await _resumeService.GetResumesAsync();
-                ResumeListBox.Items.Clear();
-                foreach (var resume in resumes)
-                {
-                    ResumeListBox.Items.Add(resume.ToString());
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при загрузке резюме: {ex.Message}");
+                ResumeListBox.Items.Add(resume.ToString());
             }
         }
     }

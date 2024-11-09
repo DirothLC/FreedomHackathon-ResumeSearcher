@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Frontend.csproj": {}
+    "D:\\GitHubRepos\\frontend\\Frontend.csproj": {}
   },
   "projects": {
-    "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Frontend.csproj": {
+    "D:\\GitHubRepos\\frontend\\Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Frontend.csproj",
+        "projectUniqueName": "D:\\GitHubRepos\\frontend\\Frontend.csproj",
         "projectName": "Frontend",
-        "projectPath": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\Frontend.csproj",
+        "projectPath": "D:\\GitHubRepos\\frontend\\Frontend.csproj",
         "packagesPath": "C:\\Users\\Philin\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubRepos\\FreedomHackathon-ResumeSearcher\\frontend\\obj\\",
+        "outputPath": "D:\\GitHubRepos\\frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Philin\\AppData\\Roaming\\NuGet\\NuGet.Config",
