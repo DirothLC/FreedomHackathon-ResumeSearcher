@@ -62,4 +62,19 @@ public List<Resume> readFullText(@RequestParam String path){
             return stripper.getText(document);
         }
     }
+    public List<Resume> findResume(List<Resume> resumes,String sex, String experience){
+        List<Resume>correctResumes=new ArrayList<>();
+        for(Resume resume:resumes){
+            if(sex.equals(resume.getSex())&&experience.equals(resume.getExperience())){correctResumes.add(resume);}
+        }
+        return correctResumes;
+    }
+    public List<Resume> findResume(List<Resume> resumes,String something){
+        List<Resume>correctResumes=new ArrayList<>();
+        for(Resume resume:resumes){
+            if(something.equals(resume.getSex())||something.equals(resume.getExperience())){correctResumes.add(resume);}
+        }
+        return correctResumes;
+    }
+
 }
